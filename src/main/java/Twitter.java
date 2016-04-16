@@ -1,14 +1,16 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.lang.Integer.parseInt;
 import static java.lang.System.out;
 
 public class Twitter {
+
+    public static HashMap users = new HashMap();
+
     public static void main(String args[]) {
         out.println("Java Network");
-
         menu();
     }
 
@@ -21,10 +23,10 @@ public class Twitter {
         out.println("4. Wall");
         out.println("5. Follow");
         out.println("6. Exit");
-        out.println("\n Please enter your option: ");
+        out.println("Please enter your option: ");
 
-        switch (parseInt(scanner())) {
-            case 1:
+        switch (scanner()) {
+            case "1":
                 createUser();
                 break;
             default:
@@ -39,11 +41,11 @@ public class Twitter {
     }
 
     private static void createUser() {
-        List<String> users = new ArrayList<String>();
 
         out.println("User Menu");
-        out.print("Enter your username: ");
-        users.add(scanner());
+        out.println("Enter your username:");
+        users.put(scanner(), new HashMap());
+        out.println(users);
+        menu();
     }
-
 }

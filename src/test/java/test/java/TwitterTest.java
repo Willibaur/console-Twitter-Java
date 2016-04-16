@@ -23,7 +23,6 @@ public class TwitterTest {
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
-        final Twitter twitter = new Twitter();
     }
 
     @After
@@ -42,10 +41,5 @@ public class TwitterTest {
     public void err() {
         System.err.print("hello again");
         assertEquals("hello again", errContent.toString());
-    }
-
-    @Test
-    public void createUser() {
-        twitter.createUser();
     }
 }
