@@ -8,6 +8,7 @@ import static java.lang.System.out;
 public class Twitter {
 
     public static HashMap users = new HashMap();
+    private static String currentUser;
 
     public static void main(String args[]) {
         out.println("Java Network");
@@ -39,6 +40,8 @@ public class Twitter {
     }
 
     private static void postMessage() {
+        out.println("Welcome" + currentUser);
+        out.println("Message:");
 
     }
 
@@ -47,15 +50,23 @@ public class Twitter {
         out.println("Enter your new username:");
 
         String user = scanner();
+        currentUser = user;
 
         if (validateUser(user)) {
             out.println("Username already exists!");
             createUser();
         }
 
-        users.put(user, new HashMap());
+        users.put(user, createUserHashMap());
         out.println(users);
         menu();
+    }
+
+    private static HashMap createUserHashMap() {
+        HashMap userHashMap = new HashMap();
+        userHashMap.put("Peeps", new ArrayList<String>());
+        userHashMap.put("Following", new ArrayList<String>());
+        return userHashMap;
     }
 
     private static boolean validateUser(String user) {
