@@ -29,23 +29,41 @@ public class Twitter {
             case "1":
                 createUser();
                 break;
+            case "2":
+                postMessage();
+                break;
             default:
                 out.println("Invalid option");
                 break;
         }
     }
 
-    private static String scanner() {
-        Scanner input = new Scanner(System.in);
-        return input.nextLine();
+    private static void postMessage() {
+
     }
 
     private static void createUser() {
-
         out.println("User Menu");
-        out.println("Enter your username:");
-        users.put(scanner(), new HashMap());
+        out.println("Enter your new username:");
+
+        String user = scanner();
+
+        if (validateUser(user)) {
+            out.println("Username already exists!");
+            createUser();
+        }
+
+        users.put(user, new HashMap());
         out.println(users);
         menu();
+    }
+
+    private static boolean validateUser(String user) {
+        return users.containsKey(user);
+    }
+
+    private static String scanner() {
+        Scanner input = new Scanner(System.in);
+        return input.nextLine();
     }
 }
