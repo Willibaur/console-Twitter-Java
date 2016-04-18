@@ -7,10 +7,10 @@ public class Twitter {
 
     public static HashMap users = new HashMap();
     public static User user;
-    public static String currentUser;
+    public static String currentUser = "";
 
     public static void main(String args[]) {
-        out.printf("Java Network Menu %n%n");
+        out.printf("Java Network Menu");
         showMenu();
     }
 
@@ -20,14 +20,14 @@ public class Twitter {
     }
 
     public  static void printOptions() {
-        out.println("1. Create User");
-        out.println("2. Post a message");
+        out.printf("%n%n1. Create User%n");
+        out.println("2. Post");
         out.println("3. Follow");
-        out.println("4. Show messages");
+        out.println("4. Wall");
         out.println("5. Change User");
-        out.println("6. Show followed timeline");
+        out.println("6. Show Timeline");
         out.printf("7. Exit %n%n");
-        out.print("Please enter your option: ");
+        out.printf("Please select your option %s: ", currentUser);
     }
 
     public  static void selectOption() {
@@ -65,6 +65,7 @@ public class Twitter {
             User temp = (User) users.get(object);
             temp.printPeeps();
         }
+        showMenu();
     }
 
     public  static void changeUser() {
@@ -74,18 +75,18 @@ public class Twitter {
             currentUser = scanner();
             user = (User) users.get(currentUser);
         } else {
-            out.println("There are no more users!!!");
+            out.printf("%n%nThere are no more users %s!!!", currentUser);
         }
         showMenu();
     }
 
     public  static void followUser() {
         if (users.size() <= 1) {
-            out.println("There are no users to follow!!!");
+            out.printf("%n%nThere are no users to follow!!!");
             showMenu();
         }
         showAllUsers();
-        out.println("Select an user to follow: ");
+        out.printf("%n%nSelect an user to follow %s: ", currentUser);
         user.follow(scanner());
         showMenu();
     }
@@ -100,6 +101,7 @@ public class Twitter {
             out.println("Please, create a user first.");
             showMenu();
         }
+        out.printf("%n%nEnter your message %s: ", currentUser);
         user.post(scanner());
         showMenu();
     }
@@ -110,21 +112,18 @@ public class Twitter {
         currentUser = scanner();
         user = new User(currentUser);
         users.put(currentUser, user);
-        showCurrentUser();
-    }
-
-    public  static void showAllUsers() {
-        out.printf("%nThis is the list of users created so far:");
-        out.println(users.keySet());
-    }
-
-    public  static void showCurrentUser() {
-        out.printf("Username: %s%n%n", user.getName());
+        out.printf("%n%nYour username is %s", currentUser);
         showMenu();
     }
 
+    public  static void showAllUsers() {
+        out.printf("%n%nThis is the list of users created so far %s: ", currentUser);
+        out.println(users.keySet());
+    }
+
+
     public  static void exitProgram() {
-        out.println("Thank you for using our service, have a good day!");
+        out.printf("%n%nThank you for using our service %s, have a good day!", currentUser);
     }
 
     public  static String scanner() {

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b655b585-7a2f-463f-9424-5b41b6d6c710" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../../README.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Twitter.java" afterPath="$PROJECT_DIR$/src/main/java/Twitter.java" />
     </list>
     <ignored path="chitter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,14 +55,9 @@
           <file leaf-file-name="Twitter.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Twitter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="594">
-                  <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-                  <folding>
-                    <element signature="method#showMessages#0;class#Twitter#0" expanded="false" />
-                    <element signature="method#postMessage#0;class#Twitter#0" expanded="false" />
-                    <element signature="method#showAllUsers#0;class#Twitter#0" expanded="false" />
-                    <element signature="method#showCurrentUser#0;class#Twitter#0" expanded="false" />
-                  </folding>
+                <state relative-caret-position="468">
+                  <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -80,17 +76,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TwitterTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TwitterTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/TwitterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+                <state relative-caret-position="432">
+                  <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/UserTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
@@ -305,7 +301,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TwitterTest">
+  <component name="RunManager" selected="JUnit.UserTest">
     <configuration default="false" name="Twitter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Twitter" />
@@ -836,11 +832,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TwitterTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.TwitterTest.printOptions" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TwitterTest.selectOptions" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TwitterTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.Twitter" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TwitterTest.selectOptions" />
       </list>
     </recent_temporary>
   </component>
@@ -862,31 +858,31 @@
       <workItem from="1460756355490" duration="164000" />
       <workItem from="1460756532913" duration="69000" />
       <workItem from="1460756615177" duration="27904000" />
-      <workItem from="1460849739054" duration="30376000" />
+      <workItem from="1460849739054" duration="32521000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TwitterTest - 2016.04.18 at 08h 06m 37s.xml">
+    <history-entry file="TwitterTest - 2016.04.18 at 08h 52m 28s.xml">
       <configuration name="TwitterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TwitterTest - 2016.04.18 at 08h 52m 28s.xml">
+    <history-entry file="TwitterTest - 2016.04.18 at 08h 53m 10s.xml">
+      <configuration name="TwitterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TwitterTest - 2016.04.18 at 09h 25m 51s.xml">
       <configuration name="TwitterTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TwitterTest_printOptions - 2016.04.18 at 08h 52m 24s.xml">
       <configuration name="TwitterTest.printOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TwitterTest_selectOptions - 2016.04.18 at 08h 26m 15s.xml">
-      <configuration name="TwitterTest.selectOptions" configurationId="JUnit" />
+    <history-entry file="TwitterTest_printOptions - 2016.04.18 at 09h 26m 10s.xml">
+      <configuration name="TwitterTest.printOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TwitterTest_selectOptions - 2016.04.18 at 08h 26m 48s.xml">
-      <configuration name="TwitterTest.selectOptions" configurationId="JUnit" />
+    <history-entry file="TwitterTest_printOptions - 2016.04.18 at 09h 26m 36s.xml">
+      <configuration name="TwitterTest.printOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TwitterTest_selectOptions - 2016.04.18 at 08h 30m 22s.xml">
-      <configuration name="TwitterTest.selectOptions" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TwitterTest_selectOptions - 2016.04.18 at 08h 31m 18s.xml">
-      <configuration name="TwitterTest.selectOptions" configurationId="JUnit" />
+    <history-entry file="TwitterTest_printOptions - 2016.04.18 at 09h 28m 07s.xml">
+      <configuration name="TwitterTest.printOptions" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TwitterTest_selectOptions - 2016.04.18 at 08h 35m 00s.xml">
       <configuration name="TwitterTest.selectOptions" configurationId="JUnit" />
@@ -899,7 +895,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82126000" />
+    <option name="totallyTimeSpent" value="84271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -913,7 +909,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.50427353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.48504272" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.48504272" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22809829" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.4957265" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -946,7 +942,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -965,12 +961,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="method#showMessages#0;class#Twitter#0" expanded="false" />
-            <element signature="method#postMessage#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showAllUsers#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showCurrentUser#0;class#Twitter#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,12 +1019,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="method#showMessages#0;class#Twitter#0" expanded="false" />
-            <element signature="method#postMessage#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showAllUsers#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showCurrentUser#0;class#Twitter#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,12 +1043,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="method#showMessages#0;class#Twitter#0" expanded="false" />
-            <element signature="method#postMessage#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showAllUsers#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showCurrentUser#0;class#Twitter#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,12 +1067,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="method#showMessages#0;class#Twitter#0" expanded="false" />
-            <element signature="method#postMessage#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showAllUsers#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showCurrentUser#0;class#Twitter#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,6 +1085,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1131,6 +1115,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TwitterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1139,35 +1139,6 @@
             <element signature="e#689#690#0" expanded="true" />
             <element signature="e#762#763#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="method#showMessages#0;class#Twitter#0" expanded="false" />
-            <element signature="method#postMessage#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showAllUsers#0;class#Twitter#0" expanded="false" />
-            <element signature="method#showCurrentUser#0;class#Twitter#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TwitterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>

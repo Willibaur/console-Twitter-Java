@@ -15,14 +15,14 @@ public class TwitterTest {
     @Test
     public void printOptions()  {
         System.setOut(new PrintStream(outContent));
-        String menu =   "1. Create User\n" +
-                        "2. Post a message\n" +
+        String menu =   "\n\n1. Create User\n" +
+                        "2. Post\n" +
                         "3. Follow\n" +
-                        "4. Show messages\n" +
+                        "4. Wall\n" +
                         "5. Change User\n" +
-                        "6. Show followed timeline\n" +
+                        "6. Show Timeline\n" +
                         "7. Exit \n\n" +
-                        "Please enter your option: ";
+                        "Please select your option : ";
         Twitter.printOptions();
         assertEquals(menu, outContent.toString());
     }
