@@ -12,6 +12,7 @@ Create a console app that emulates the basic Twitter functions.
 
 The application needs to be driven by TDD and BDD by using Java, JUnit and Mockito.
 
+The main goal behind the challenge was to identify how fast I could learn Java, JUnit, Mockito, Maven and IntelliJ within 3 1/2 days and be able to implement a solution using those Technologies. 
 
 Features
 ------------
@@ -30,6 +31,9 @@ Technologies used
 
   * Back end framework
     * Java
+
+  * Project structure
+    * Maven
 
 Testing and running environment setup
 --------------------------------------
