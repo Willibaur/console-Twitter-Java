@@ -1,35 +1,36 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Scanner;
 
 import static java.lang.System.out;
 
 public class Twitter {
 
-    private static HashMap users = new HashMap();
-    private static User user;
-    private static String currentUser;
+    public static HashMap users = new HashMap();
+    public static User user;
+    public static String currentUser;
 
     public static void main(String args[]) {
         out.printf("Java Network Menu %n%n");
-        menu();
+        showMenu();
     }
 
-    private static void menu() {
+    public static void showMenu() {
         printOptions();
         selectOption();
     }
 
-
-    private static void printOptions() {
+    public  static void printOptions() {
         out.println("1. Create User");
         out.println("2. Post a message");
         out.println("3. Follow");
         out.println("4. Show messages");
         out.println("5. Change User");
-        out.printf("6. Exit %n%n");
+        out.println("6. Show followed timeline");
+        out.printf("7. Exit %n%n");
         out.print("Please enter your option: ");
     }
 
-    private static void selectOption() {
+    public  static void selectOption() {
         switch (scanner()) {
             case "1":
                 createUser();
@@ -47,16 +48,26 @@ public class Twitter {
                 changeUser();
                 break;
             case "6":
+                showFollowedTimelines();
+                break;
+            case "7":
                 exitProgram();
                 break;
             default:
                 out.println("Invalid option, try again.");
-                menu();
+                showMenu();
                 break;
         }
     }
 
-    private static void changeUser() {
+    public static void showFollowedTimelines() {
+        for (String object: user.following) {
+            User temp = (User) users.get(object);
+            temp.printPeeps();
+        }
+    }
+
+    public  static void changeUser() {
         if (users.size() >= 2) {
             out.printf("%nSelect user: ");
             showAllUsers();
@@ -65,31 +76,35 @@ public class Twitter {
         } else {
             out.println("There are no more users!!!");
         }
-        menu();
+        showMenu();
     }
 
-    private static void followUser() {
+    public  static void followUser() {
         if (users.size() <= 1) {
             out.println("There are no users to follow!!!");
+            showMenu();
         }
-        out.println("Select an user to follow");
+        showAllUsers();
+        out.println("Select an user to follow: ");
+        user.follow(scanner());
+        showMenu();
     }
 
-    private static void showMessages() {
+    public  static void showMessages() {
         user.printPeeps();
-        menu();
+        showMenu();
     }
 
-    private static void postMessage() {
+    public  static void postMessage() {
         if (users.size() == 0) {
             out.println("Please, create a user first.");
-            menu();
+            showMenu();
         }
         user.post(scanner());
-        menu();
+        showMenu();
     }
 
-    private static void createUser() {
+    public  static void createUser() {
         out.print("Enter your new username: ");
 
         currentUser = scanner();
@@ -98,21 +113,21 @@ public class Twitter {
         showCurrentUser();
     }
 
-    private static void showAllUsers() {
+    public  static void showAllUsers() {
         out.printf("%nThis is the list of users created so far:");
         out.println(users.keySet());
     }
 
-    private static void showCurrentUser() {
+    public  static void showCurrentUser() {
         out.printf("Username: %s%n%n", user.getName());
-        menu();
+        showMenu();
     }
 
-    private static void exitProgram() {
+    public  static void exitProgram() {
         out.println("Thank you for using our service, have a good day!");
     }
 
-    private static String scanner() {
+    public  static String scanner() {
         Scanner input = new Scanner(System.in);
         return input.nextLine();
     }

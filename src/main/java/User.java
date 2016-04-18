@@ -8,6 +8,7 @@ import static java.lang.System.out;
 public class User {
     String username;
     ArrayList<String> peeps = new ArrayList<>();
+    ArrayList<String> following = new ArrayList<>();
 
     public User(String name) {
         username = name;
@@ -24,9 +25,10 @@ public class User {
     public void printPeeps() {
         out.println("These are the messages created so far:");
         for (String object: peeps) out.println(object);
+    }
 
-//        out.println("This is the ArrayList with the messages:");
-//        out.printf("%s%n%n", peeps);
+    public void follow(String name) {
+        following.add(name);
     }
 }
 
