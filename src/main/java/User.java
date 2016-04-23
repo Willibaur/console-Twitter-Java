@@ -23,7 +23,7 @@ public class User {
     }
 
     public void printPeeps() {
-        out.println("These are the messages created so far:");
+        out.printf("%n%nThese are the messages created so far:%n%n");
         peeps.forEach(out::println);
     }
 
