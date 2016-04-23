@@ -24,7 +24,7 @@ public class User {
 
     public void printPeeps() {
         out.println("These are the messages created so far:");
-        for (String object: peeps) out.println(object);
+        peeps.forEach(out::println);
     }
 
     public void follow(String name) {
